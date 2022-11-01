@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- this links the document to the css file  -->
+    <link rel="stylesheet" href="./DigitalClock.css"> 
+    <!-- translates machine code into human text -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- for scaling the page's dimensions -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title is what appears in the tab -->
     <title>Document</title>
 </head>
+<!-- what appears on the page is the body -->
 <body>
-    <div id="MyClockDisplay" class="clock" onload="showTime()"></div>
+    <!-- expands items to fit them in the same space -->
+    <div class="flex-container">
+        <!-- id uniquely identifies an element for styling and referencing,class groups elements into a group\
+        for styling,onload is an event that shows a method show time when the page is loaded -->
+        <div id="MyClockDisplay" class="clock" onload="showTime()"></div>  
+      </div>
+   <!-- links the javascript file to the document -->
     <script src="./DigitalClock.js"></script>
 </body>
 </html>
